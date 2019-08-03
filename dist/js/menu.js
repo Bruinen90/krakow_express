@@ -1,3 +1,5 @@
+console.log('test')
+
 const menuCont = document.querySelector('.nav__menuCont');
 
 const toggleMenu = () => {

@@ -669,7 +669,7 @@ p {
   align-items: center;
   width: auto;
   color: #e4d864;
-  padding: 15px 60px;
+  padding: 15px;
   border: 2px solid #e4d864;
   border-radius: 5px;
   max-width: 75%; }
@@ -754,7 +754,8 @@ p {
   overflow: auto;
   transform: translateY(calc(-100% - 60px));
   opacity: 0;
-  transition: all .5s ease-in-out; }
+  transition: all .5s ease-in-out;
+  z-index: 10; }
   .nav__menuCont .nav__bookingServicesCont {
     transform: scale(0);
     transition: 1s ease-out; }
