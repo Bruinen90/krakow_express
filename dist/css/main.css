@@ -842,7 +842,7 @@ p {
 
 .welcome {
   width: 100%;
-  background: url("/img/backgrounds/welcome.jpg") center no-repeat;
+  background: url("img/backgrounds/welcome.jpg") center no-repeat;
   background-size: cover;
   min-height: 80vh;
   position: relative;
