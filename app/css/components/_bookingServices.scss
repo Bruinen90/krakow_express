@@ -20,6 +20,7 @@
     border-radius: 5px;
     padding: 20px 12px;
     background: #fff;
+    color: $color-navy;
 }
 
 .bookingServices__title {
@@ -34,6 +35,9 @@
     width: 60px;
     height: 60px;
     margin-bottom: 25px;
+    path { 
+        fill: currentColor; 
+    }
 }
 
 .bookingServices__box--dark {
@@ -54,6 +58,7 @@
         padding: 25px;
         position: relative;
         overflow: hidden;
+        transition: 0.35s ease-in;
         &:after {
             content: ' ';
             @include absoluteFull;
@@ -63,11 +68,9 @@
             z-index: 0;
         }
         &:hover {
-            .bookingServices__icon {
-                filter: brightness(100);
-            }
+            color: $color-yellow;
             .bookingServices__title {
-                color: #fff;
+                color: inherit;
             }
             &:after {
                 transform: none;

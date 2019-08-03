@@ -3,6 +3,7 @@ const nunjucksRender = require("gulp-nunjucks-render");
 const sass = require("gulp-sass");
 const sassGlob = require("gulp-sass-glob");
 const browserSync = require('browser-sync').create();
+const svgInject = require('gulp-svg-inject');
 
 function defaultTask(cb) {
 	cb();
@@ -19,7 +20,7 @@ gulp.task("browserSync", function() {
 
 gulp.task("nunjucks", function() {
 	return gulp
-		.src("app/pages/**/*.+(html|njk)")
+        .src("app/pages/**/*.+(html|njk)")
 		.pipe(
 			nunjucksRender({
 				path: ["app/templates"]
@@ -33,6 +34,13 @@ gulp.task("nunjucks", function() {
 		);
 });
 
+gulp.task('svgInject', function() {
+    return gulp
+        .src('dist/*.+(html)')
+        .pipe(svgInject())
+        .pipe(gulp.dest("dist/"))
+})
+
 gulp.task("styles", function() {
 	return gulp
 		.src("app/css/main.scss")
@@ -42,7 +50,7 @@ gulp.task("styles", function() {
 		.pipe(browserSync.reload({ stream: true }));
 });
 
-gulp.task('watch', gulp.parallel('browserSync', 'styles', 'nunjucks', function() {
+gulp.task('watch', gulp.parallel('browserSync', 'styles', 'nunjucks', 'svgInject', function() {
     gulp.watch('app/css/**/*.scss', gulp.series('styles'))
     gulp.watch('app/**/*.njk', gulp.series('nunjucks'))
 }))

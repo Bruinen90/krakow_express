@@ -1,5 +1,6 @@
 body {
     background: $color-light;
+    color: $color-navy;
 }
 
 @font-face {
@@ -14,12 +15,12 @@ body {
 
 * {
     font-family: 'Avenir';
-    color: $color-navy;
     box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
+    color: $color-navy;
 }
 
 p {

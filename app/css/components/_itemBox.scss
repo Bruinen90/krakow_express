@@ -30,9 +30,9 @@
     width: 121px;
     height: 33px;
     border-radius: 17px;
-    background-color: #4b6d77;
-    border: 0;
-    color: #fff;
+    background-color: $color-navy;
+    border: 2px solid transparent;
+    color: $color-yellow;
     font-size: 14px;
     font-weight: normal;
 }
@@ -41,5 +41,11 @@
     .itemBox__title {
         font-size: 1.25em;
         margin-bottom: 45px;
+    }
+
+    .itemBox__button:hover {
+        color: $color-navy;
+        border-color: $color-navy;
+        background: transparent;
     }
  }
