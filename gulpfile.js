@@ -21,6 +21,7 @@ gulp.task("browserSync", function() {
 gulp.task("nunjucks", function() {
 	return gulp
         .src("app/pages/**/*.+(html|njk)")
+        .pipe(svgInject())
 		.pipe(
 			nunjucksRender({
 				path: ["app/templates"]

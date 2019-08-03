@@ -8,7 +8,7 @@
 	</head>
 	<body>
 		<div class="umbrella">
-			Special holiday offers! Best tours 50% off! Only 24h 33m 15s
+			Special holiday offers! Best tours 50% off! Only <div class="umbrella__countdown"></div>
 		</div>
 
 		<div class="socials">
@@ -20,7 +20,11 @@
 				/>
 			</a>
 			<a href="#" class="socials__box">
-				<img src="dist/img/icons/twitter.svg" alt="" class="socials__icon" />
+				<img
+					src="dist/img/icons/twitter.svg"
+					alt=""
+					class="socials__icon"
+				/>
 			</a>
 			<a href="#" class="socials__box">
 				<img
@@ -32,7 +36,54 @@
 		</div>
 
 		{% block content %} {% endblock %}
-		<script src="js/menu.js"></script>
+
+		<footer class="footer">
+			<div class="footer__logoCont">
+				<h2 class="footer__logo">
+					Kraków Airport Express
+				</h2>
+				<div class="footer__copyright">
+					© 2017 Krakow Express. All rigths reserved 2019.
+				</div>
+			</div>
+			<div class="footer__linksCont">
+				<a href="airport_shuttle.html" class="footer__link"
+					>Airport shuttle</a
+				>
+				<a href="feedback.html" class="footer__link">Feedback</a>
+				<a href="vip_tours.html" class="footer__link">VIP tours</a>
+				<a href="booking.html" class="footer__link">Booking</a>
+				<a href="coach_tours.html" class="footer__link">Coach Tours</a>
+				<a href="contact.html" class="footer__link">Contact</a>
+				<a href="pricing.html " class="footer__link">Pricing</a>
+			</div>
+			<div class="footer__socials">
+				<a href="" class="footer__socialBox">
+					<img
+						src="dist/img/icons/facebook.svg"
+						alt=""
+						class="footer__socialIcon"
+					/>
+				</a>
+				<a href="" class="footer__socialBox">
+					<img
+						src="dist/img/icons/twitter.svg"
+						alt=""
+						class="footer__socialIcon"
+					/>
+				</a>
+				<a href="" class="footer__socialBox">
+					<img
+						src="dist/img/icons/linked-in.svg"
+						alt=""
+						class="footer__socialIcon"
+					/>
+				</a>
+			</div>
+		</footer>
+
+        <script src="js/menu.js"></script>
+		<script src="js/timer.js"></script>        
 		<script id="__bs_script__">
 			//<![CDATA[
 			document.write(

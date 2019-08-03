@@ -7,10 +7,22 @@
     color: #fff;
 }
 
+.umbrella__expired {
+    display: none;
+}
+
 @media (min-width: $tablet) {
     .umbrella {
         @include flexCenter;
         height: 60px;
         font-size: 23px;
+    }
+
+    .umbrella__countdown {
+        margin-left: 8px;
+    }
+
+    .umbrella__expired {
+        display: none;
     }
 }
