@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kraków Express - {%block title %} {% endblock %}</title>
+		<link rel="stylesheet" href="css/main.css" />
+	</head>
+	<body>
+		<div class="umbrella">
+			Special holiday offers! Best tours 50% off! Only 24h 33m 15s
+		</div>
+
+		<div class="socials">
+			<a href="#" class="socials__box">
+				<img
+					src="img/icons/facebook.svg"
+					alt=""
+					class="socials__icon"
+				/>
+			</a>
+			<a href="#" class="socials__box">
+				<img src="img/icons/twitter.svg" alt="" class="socials__icon" />
+			</a>
+			<a href="#" class="socials__box">
+				<img
+					src="img/icons/linked-in.svg"
+					alt=""
+					class="socials__icon"
+				/>
+			</a>
+		</div>
+
+		{% block content %} {% endblock %}
+		<script src="js/menu.js"></script>
+		<script id="__bs_script__">
+			//<![CDATA[
+			document.write(
+				"<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.26.7'><\/script>".replace(
+					"HOST",
+					location.hostname
+				)
+			);
+			//]]>
+		</script>
+	</body>
+</html>

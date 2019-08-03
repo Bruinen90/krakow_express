@@ -1,0 +1,45 @@
+.itemBox {
+    background: #fff;
+    margin: 30px 0;
+    padding-bottom: 25px;
+    border-radius: 5px;
+}
+
+.itemBox__imgCont {
+}
+
+.itemBox__img {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.itemBox__title {
+    margin: 20px 0;
+    padding: 0 15px;
+}
+
+.itemBox__buyRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 15px;
+}
+
+.itemBox__button {
+    width: 121px;
+    height: 33px;
+    border-radius: 17px;
+    background-color: #4b6d77;
+    border: 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+ @media (min-width: $desktop) {
+    .itemBox__title {
+        font-size: 1.25em;
+        margin-bottom: 45px;
+    }
+ }

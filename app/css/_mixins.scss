@@ -1,0 +1,18 @@
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin absoluteFull {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+@mixin pageContent {
+    max-width: 1440px;
+    margin: auto;
+}

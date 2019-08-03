@@ -1,0 +1,117 @@
+{% macro active(activePage) %}
+<div class="cover"></div>
+<nav class="nav">
+	<div class="nav__logoCont">
+		<!-- <img src="img/logo.svg" alt="" class="nav__logo" /> -->
+		Kraków Airport Express
+    </div>
+    <button class="hamburger hamburger--spring" type="button" onclick="toggleMenu()">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+	<div class="nav__menuCont">
+		<ul class="nav__menu">
+			<li class="nav__item">
+				<a
+					href="/airport_shuttle.html"
+					class="nav__link {%if activePage == 'airport_shuttle' %} nav__link--active {% endif %}"
+					>Airport shuttle</a
+				>
+			</li>
+			<li class="nav__item">
+				<a
+					href="/private_tours.html"
+					class="nav__link {%if activePage == 'private_tours' %} nav__link--active {% endif %}"
+					>Private tours</a
+				>
+			</li>
+			<li class="nav__item">
+				<a
+					href="/coach_tours.html"
+					class="nav__link {%if activePage == 'coach_tours' %} nav__link--active {% endif %}"
+					>Coach tours</a
+				>
+			</li>
+			<li class="nav__item">
+				<a
+					href="/pricing.html"
+					class="nav__link {%if activePage == 'pricing' %} nav__link--active {% endif %}"
+					>Pricing</a
+				>
+			</li>
+			<li class="nav__item">
+				<a
+					href="/feedback.html"
+					class="nav__link {%if activePage == 'feedback' %} nav__link--active {% endif %}"
+					>Feedback</a
+				>
+			</li>
+			<li class="nav__item">
+				<a
+					href="/booking.html"
+					class="nav__link {%if activePage == 'booking' %} nav__link--active {% endif %}"
+					>Booking</a
+				>
+			</li>
+			<li class="nav__item">
+				<a
+					href="/contact.html"
+					class="nav__link {%if activePage == 'contact' %} nav__link--active {% endif %}"
+					>Contact</a
+				>
+			</li>
+        </ul>
+        <div class="nav__bookingServicesCont">
+            <article class="bookingServices">
+                <h3 class="bookingServices__header">
+                    Fast booking services
+                </h3>
+                <div class="bookingServices__grid">
+                    <div class="bookingServices__box">
+                        <img
+                            src="img/icons/airport_transfer.svg"
+                            alt=""
+                            class="bookingServices__icon"
+                        />
+                        <h5 class="bookingServices__title">
+                            Airport Transfer
+                        </h5>
+                    </div>
+                    <div class="bookingServices__box">
+                        <img
+                            src="img/icons/international_transfer.svg"
+                            alt=""
+                            class="bookingServices__icon"
+                        />
+                        <h5 class="bookingServices__title">
+                            International Transfer
+                        </h5>
+                    </div>
+                    <div class="bookingServices__box">
+                        <img
+                            src="img/icons/coach_tours.svg"
+                            alt=""
+                            class="bookingServices__icon"
+                        />
+                        <h5 class="bookingServices__title">
+                            Coach Tours
+                        </h5>
+                    </div>
+                    <div class="bookingServices__box bookingServices__box--dark">
+                        <img
+                            src="img/icons/private_tours.svg"
+                            alt=""
+                            class="bookingServices__icon"
+                        />
+                        <h5 class="bookingServices__title">
+                            Private Tours
+                        </h5>
+                    </div>
+                </div>
+            </article>
+        </div>
+	</div>
+</nav>
+
+{% endmacro %}

@@ -1,0 +1,16 @@
+.umbrella {
+    display: none;
+    background-color: $color-red;
+    width: 100%;
+    height: 30px;
+    font-size: 10px;
+    color: #fff;
+}
+
+@media (min-width: $tablet) {
+    .umbrella {
+        @include flexCenter;
+        height: 60px;
+        font-size: 23px;
+    }
+}

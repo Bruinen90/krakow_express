@@ -1,0 +1,27 @@
+body {
+    background: $color-light;
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: url("../fonts/AEH.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: "Avenir Medium";
+    src: url("../fonts/Avenir_Medium.ttf") format('truetype');
+}
+
+* {
+    font-family: 'Avenir';
+    color: $color-navy;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-family: 'Avenir Medium';
+}
