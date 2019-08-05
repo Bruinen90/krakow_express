@@ -1,7 +1,7 @@
-let countDownDate = new Date("Aug 4, 2019 23:53:01").getTime();
+let countDownDate = new Date("Aug 6, 2019 23:53:01").getTime();
 
 let x = setInterval(function() {
-	let now = new Date().getTime();
+	const now = new Date().getTime();
 	let distance = countDownDate - now;
 	let days = Math.floor(distance / (1000 * 60 * 60 * 24));
 	let hours = Math.floor(

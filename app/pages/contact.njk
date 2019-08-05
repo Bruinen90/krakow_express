@@ -1,0 +1,90 @@
+{% extends "../templates/layout.njk" %} {% block title %} Homepage {% endblock
+%} {% block content %} {% import '../templates/macros/nav.njk' as nav %}
+{{ nav.active("contact") }}
+
+<header class="subpageHeader">
+	<div class="subpageHeader__cont">
+        <div class="subpageHeader__text">
+            <h1 class="subpageHeader__title">
+                Contact
+            </h1>
+            <div class="subpageHeader__breadcrumbs">
+                <a href="/index.html" class="subpageHeader__breadcrumb">Home</a>
+                <a
+                    href="/contact.html"
+                    class="subpageHeader__breadcrumb subpageHeader__breadcrumb--current"
+                    >Contact</a
+                >
+            </div>
+        </div>
+		<img
+			src="img/tripadvisor_cert.png"
+			alt=""
+			class="subpageHeader__tripadvisor"
+		/>
+	</div>
+</header>
+
+<section class="contact">
+    <p class="contact__text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo
+        quis leo fermentum lacinia ac non ante. Aliquam erat volutpat. Duis quis
+        cursus urna. Phasellus nec vehicula ipsum, vel venenatis ligula. Phasellus
+        eu velit massa. Quisque ac tempor diam. Vivamus fermentum eleifend justo et
+        suscipit. Nunc malesuada leo nec tellus interdum suscipit. Cras vitae turpis
+        a metus rutrum elementum eu a sapien.
+    </p>
+    
+    <div class="contact__address">
+        <h5 class="contact__smallHeader">
+            Kraków Airport Express
+        </h5>
+        Krowoderskich Zuchow 16 <br />
+        Tel.
+        <a href="tel: +48514850500" class="contact__link">+48 514 850 500</a>
+        (24h/7) <br />
+        Email:
+        <a href="mailto: contact@krakow-airport-express.com" class="contact__link"
+            >contact@krakow-airport-express.com</a
+        >
+    </div>
+    
+    <article class="contact__formCont">
+        <h2 class="contact__formHeader">
+            Ask question
+        </h2>
+        <form action="POST" class="form"> 
+            <input
+                type="text"
+                name="name"
+                class="form__input"
+                placeholder="Your name"
+            />
+            <input
+                type="phone"
+                name="phone"
+                class="form__input"
+                placeholder="Your phone"
+            />
+            <input
+                type="email"
+                name="email"
+                class="form__input"
+                placeholder="Your Email"
+            />
+            <textarea name="message" cols="30" rows="10" class="form__textArea" placeholder="Type your message"></textarea>
+            <p class="form__agreement">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec
+                justo quis leo fermentum lacinia ac non ante. Aliquam erat volutpat.
+                Duis quis cursus urna. Phasellus nec vehicula ipsum, vel venenatis
+                ligula. Phasellus eu velit massa. Quisque ac tempor diam. Vivamus
+                fermentum eleifend justo et suscipit. Nunc malesuada leo
+            </p>
+            <button type="submit" class="form__button">
+                Submit 
+            </button>
+        </form>
+    </article>
+</section>
+
+{% endblock %}
