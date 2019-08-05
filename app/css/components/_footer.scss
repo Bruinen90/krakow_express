@@ -1,8 +1,12 @@
 .footer {
+    background: #fff;
+
+}
+
+.footer__cont {
     display: grid;
     padding: 60px 15px;
     grid-gap: 30px;
-    background: #fff;
 }
 
 .footer__logoCont {
@@ -54,7 +58,7 @@
 }
 
 @media (min-width: $desktop) {
-    .footer {
+    .footer__cont {
         @include pageContent;
         padding: 60px 45px;
         grid-template-columns: repeat(3, 1fr);

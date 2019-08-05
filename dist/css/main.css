@@ -647,11 +647,21 @@ p {
 .contact__formCont {
   margin: 60px 0; }
 
+@media (min-width: 960px) {
+  .contact {
+    max-width: 1440px;
+    padding: 0 45px;
+    margin: auto; }
+  .contact__cont {
+    width: 80%; } }
+
 .footer {
+  background: #fff; }
+
+.footer__cont {
   display: grid;
   padding: 60px 15px;
-  grid-gap: 30px;
-  background: #fff; }
+  grid-gap: 30px; }
 
 .footer__logo {
   font-size: 24px;
@@ -692,7 +702,7 @@ p {
   fill: currentColor !important; }
 
 @media (min-width: 960px) {
-  .footer {
+  .footer__cont {
     max-width: 1440px;
     padding: 0 45px;
     margin: auto;
@@ -713,7 +723,9 @@ p {
   width: 100%;
   padding: 5px 15px;
   margin-bottom: 15px;
-  background: #fff; }
+  background: #fff;
+  border: 1px solid #ccc;
+  display: inline-block; }
 
 .form__textArea {
   color: #ccc; }
@@ -728,6 +740,22 @@ p {
   border: 0;
   padding: 15px 60px;
   background-color: #f10c48; }
+
+@media (min-width: 960px) {
+  .form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px; }
+  .form__input,
+  .form__textArea {
+    padding: 12px 20px; }
+  .form__textArea {
+    grid-column-end: span 2; }
+  .form__agreement {
+    grid-column-end: span 2; }
+  .form__button {
+    max-width: 345px;
+    height: 60px; } }
 
 .hero {
   width: 100%;

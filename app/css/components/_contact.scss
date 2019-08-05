@@ -22,3 +22,13 @@
 .contact__formCont {
     margin: 60px 0;
 }
+
+@media (min-width: $desktop) {
+    .contact {
+        @include pageContent;
+    }
+
+    .contact__cont {
+        width: 80%;
+    }
+}
