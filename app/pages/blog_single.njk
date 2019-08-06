@@ -1,0 +1,30 @@
+{% extends "../templates/layout.njk" %} {% block title %} Homepage {% endblock
+    %} {% block content %} {% import '../templates/macros/nav.njk' as nav %}
+    {{ nav.active("contact") }}
+    
+    <header class="subpageHeader">
+        <div class="subpageHeader__cont">
+            <div class="subpageHeader__text">
+                <h1 class="subpageHeader__title">
+                    Contact
+                </h1>
+                <div class="subpageHeader__breadcrumbs">
+                    <a href="/index.html" class="subpageHeader__breadcrumb">Home</a>
+                    <a
+                        href="/contact.html"
+                        class="subpageHeader__breadcrumb subpageHeader__breadcrumb--current"
+                        >Contact</a
+                    >
+                </div>
+            </div>
+            <img
+                src="img/tripadvisor_cert.png"
+                alt=""
+                class="subpageHeader__tripadvisor"
+            />
+        </div>
+    </header>
+    
+    
+    {% endblock %}
+    
