@@ -737,7 +737,7 @@ p {
 .form__button {
   color: #fff;
   border-radius: 5px;
-  border: 0;
+  border: 2px solid transparent;
   padding: 15px 60px;
   background-color: #f10c48; }
 
@@ -755,7 +755,11 @@ p {
     grid-column-end: span 2; }
   .form__button {
     max-width: 345px;
-    height: 60px; } }
+    height: 60px; }
+    .form__button:hover {
+      border-color: #f10c48;
+      background: transparent;
+      color: #f10c48; } }
 
 .hero {
   width: 100%;
@@ -1149,7 +1153,7 @@ p {
 
 .welcome__header {
   font-size: 30px;
-  max-width: 680px;
+  max-width: 780px;
   padding: 90px 30px;
   margin: 0 auto;
   text-align: center;
