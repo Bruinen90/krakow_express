@@ -25,14 +25,14 @@
 }
 
 .oneRowSlider__sliderCont {
-    
+    overflow: hidden;
 }
 
 .oneRowSlider__slider {
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    overflow: auto;
+    transition: all .5s ease-in-out;
 }
 
 .oneRowSlider__slide {

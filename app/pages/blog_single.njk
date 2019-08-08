@@ -1,30 +1,100 @@
 {% extends "../templates/layout.njk" %} {% block title %} Homepage {% endblock
-    %} {% block content %} {% import '../templates/macros/nav.njk' as nav %}
-    {{ nav.active("contact") }}
-    
-    <header class="subpageHeader">
-        <div class="subpageHeader__cont">
-            <div class="subpageHeader__text">
-                <h1 class="subpageHeader__title">
-                    Contact
-                </h1>
-                <div class="subpageHeader__breadcrumbs">
-                    <a href="/index.html" class="subpageHeader__breadcrumb">Home</a>
-                    <a
-                        href="/contact.html"
-                        class="subpageHeader__breadcrumb subpageHeader__breadcrumb--current"
-                        >Contact</a
-                    >
-                </div>
-            </div>
-            <img
-                src="img/tripadvisor_cert.png"
-                alt=""
-                class="subpageHeader__tripadvisor"
-            />
-        </div>
-    </header>
-    
-    
-    {% endblock %}
-    
+%} {% block content %} {% import '../templates/macros/nav.njk' as nav %}
+{{ nav.active("contact") }}
+
+<header class="subpageHeader">
+	<div class="subpageHeader__cont">
+		<div class="subpageHeader__text">
+			<h1 class="subpageHeader__title">
+				An all-day trip in pieniny
+			</h1>
+			<div class="subpageHeader__breadcrumbs">
+				<a href="./index.html" class="subpageHeader__breadcrumb"
+					>Home</a
+				>
+				<a href="./discover.html" class="subpageHeader__breadcrumb"
+					>Discover</a
+				>
+				<a
+					href="./pieniny.html"
+					class="subpageHeader__breadcrumb subpageHeader__breadcrumb--current"
+					>An all-day trip in pieniny</a
+				>
+			</div>
+		</div>
+		<img
+			src="img/tripadvisor_cert.png"
+			alt=""
+			class="subpageHeader__tripadvisor"
+		/>
+	</div>
+</header>
+
+<section class="blogSingle">
+	<div class="blogSingle__cont">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
+			ultricies, lacus in laoreet sagittis, justo tortor pulvinar felis,
+			nec suscipit dui lacus vel diam. Vivamus rhoncus nunc arcu, eu
+			auctor tellus venenatis nec. Aliquam sodales est sit amet arcu
+			blandit placerat. Suspendisse varius semper sem quis fermentum.
+			Praesent ullamcorper est enim, ac vehicula nisi rhoncus vel. Donec
+			facilisis ante vel facilisis imperdiet. Proin iaculis rutrum ex, sed
+			ultricies enim consectetur ac. Nunc sit amet mauris eu quam luctus
+			ultricies non sed nisl.
+		</p>
+
+		<h3>
+			Aenean posuere dui ac imperdiet ullamcorper. Mauris at vulputate
+			arcu. Ut scelerisque enim dui, ut finibus dolor fermentum non.
+		</h3>
+		<p>
+			In bibendum condimentum ante sed aliquam. Donec viverra faucibus
+			risus, id bibendum erat congue non. Nam commodo justo quis nunc
+			ornare vestibulum. Nunc congue in risus non dignissim.
+		</p>
+
+		<div class="blogSingle__gallery">
+			<picture class="blogSingle__photo">
+				<img
+					src="./img/photos/pieniny/sokolica.jpg"
+					alt=""
+				/>
+			</picture>
+			<picture class="blogSingle__photo blogSingle__photo--big">
+				<img
+					src="./img/photos/pieniny/splyw.jpg"
+					alt=""
+				/>
+			</picture>
+			<picture class="blogSingle__photo">
+				<img
+					src="./img/photos/pieniny/male_pieniny.jpg"
+					alt=""
+				/>
+			</picture>
+		</div>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+			cupiditate voluptatum culpa ipsam dignissimos beatae! Nisi quo ea at
+			accusantium! Lorem ipsum dolor, sit amet consectetur adipisicing
+			elit. Facere, sapiente? Error odit fugit dolor architecto laboriosam
+			eaque optio quisquam maiores amet minima, dolorum, possimus porro
+			nemo aperiam id. Molestiae, error.
+		</p>
+		<h2>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+			nemo.
+		</h2>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex magnam
+			beatae fugit mollitia earum nihil nostrum accusamus adipisci
+			incidunt, quibusdam repudiandae libero impedit temporibus
+			asperiores, modi voluptas commodi ipsa maiores culpa, molestias
+			architecto quis qui explicabo? Aut, eos hic libero nulla ad
+			laboriosam sunt totam?
+		</p>
+	</div>
+</section>
+
+{% endblock %}

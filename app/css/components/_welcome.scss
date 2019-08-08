@@ -49,10 +49,26 @@
     .welcome__header {
         font-size: 48px;
         min-height: auto;
+        padding-top: 150px;
     }
 
     .welcome__bookingServicesCont {
         display: grid;
         max-width: 780px;
+    }
+
+    .welcome__bookingServicesCont {
+        padding: 0 15px;
+        z-index: 1;
+        
+        .bookingServices__title {
+            font-size: 18px;
+        }
+        
+        .bookingServices__icon {
+            width: 90px;
+            height: 90px;
+            margin-bottom: 20px;
+        }
     }
 }

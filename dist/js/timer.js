@@ -1,4 +1,4 @@
-let countDownDate = new Date("Aug 6, 2019 23:53:01").getTime();
+let countDownDate = new Date("Aug 21, 2019 23:53:01").getTime();
 
 let x = setInterval(function() {
 	const now = new Date().getTime();
@@ -14,6 +14,7 @@ let x = setInterval(function() {
 
 	if (distance < 0) {
 		clearInterval(x);
-		document.querySelector(".umbrella").classList.add('umbrella__expired')
+        document.querySelector(".umbrella").classList.add('umbrella__expired');
+        document.querySelector(".nav").classList.add('nav--noUmbrella');
 	}
 }, 1000);

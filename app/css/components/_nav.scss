@@ -62,6 +62,10 @@
         @include pageContent;
     }
 
+    .nav--noUmbrella {
+        top: 0;
+    }
+
     .nav__logoCont {
         font-size: 28px;
     }

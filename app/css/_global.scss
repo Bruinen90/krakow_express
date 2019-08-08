@@ -3,27 +3,12 @@ body {
     color: $color-navy;
 }
 
-@font-face {
-    font-family: "Avenir";
-    src: url("../fonts/AEH.ttf") format('truetype');
-}
-
-@font-face {
-    font-family: "Avenir Medium";
-    src: url("../fonts/Avenir_Medium.ttf") format('truetype');
-}
-
 * {
-    font-family: 'Avenir Medium';
+    font-family: 'Nunito', sans-serif;
     box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
     color: $color-navy;
-    font-family: 'Avenir Medium';
-}
-
-p {
-    font-family: 'Avenir Medium';
 }
